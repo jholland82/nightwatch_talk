@@ -1,0 +1,26 @@
+{
+  "name": "nightwatch_talk",
+  "version": "1.0.0",
+  "description": "Code for NightwatchJS talk",
+  "main": "index.js",
+  "dependencies": {
+    "chromedriver": "^2.40.0",
+    "nightwatch": "^0.9.21",
+    "selenium-server": "^3.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "nightwatch": "./node_modules/.bin/nightwatch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jholland82/nightwatch_talk.git"
+  },
+  "author": "Jeffrey Holland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jholland82/nightwatch_talk/issues"
+  },
+  "homepage": "https://github.com/jholland82/nightwatch_talk#readme"
+}

@@ -1,23 +1,3 @@
-# nightwatch_talk
-NightwatchJS Talk
-
-## Setup NightwatchJS - npm
-Setting up nightwatch is quite simple.  Run the following commands:
-
-`npm init` -- This will set up your package.json file
-`npm install --save nightwatch`
-`npm install --save selenium-server`
-`npm install --save chromedriver`
-
-inside package.json add this code to `scripts`
-`"nightwatch": "./node_modules/.bin/nightwatch"`
-
-this command allows you to run `npm run nightwatch` to run your tests_output
-
-## Configuring NightwatchJS
-
-[NightwatchJS Documentation](http://nightwatchjs.org/gettingstarted#settings-file) Provides a wealth of information about configuring NightwatchJS.  For now we will use this configuration file to start:
-```
 const seleniumServer = require("selenium-server");
 const chromedriver = require("chromedriver");
 
@@ -26,9 +6,9 @@ module.exports = {
   "custom_commands_path" : "commands",
   "page_objects_path": "page_objects",
   "src_folders": [  // Where you are storing your Nightwatch e2e tests
-    google_example",
-    simple_wordpress_example",
-    "wordpress_example",
+    "google_example",
+    // "simple_wordpress_example",
+    // "wordpress_example",
   ],
   "selenium": {
     "start_process": true, // tells nightwatch to start/stop the selenium process
@@ -60,12 +40,13 @@ module.exports = {
         //        }
       }
     },
-  }
+  },
+  //  "test_workers" : {
+  //    "enabled": true,
+  //    "workers": "auto"
+  //  }
 }
 
 function padLeft (count) { // theregister.co.uk/2016/03/23/npm_left_pad_chaos/
   return count < 10 ? '0' + count : count.toString();
 }
-```
-
-When you use NightwatchJS take a look at the docs and take what you need for your test requirements.
