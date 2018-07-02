@@ -7,7 +7,7 @@ module.exports = {
       selector: 'input.gsfi'
     },
     searchButton: {
-      selector: 'input[name=btnK]'
+      selector: 'input.lsb'
     }
   }
 }
