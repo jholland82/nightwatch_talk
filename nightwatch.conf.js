@@ -7,8 +7,8 @@ module.exports = {
   "page_objects_path": "page_objects",
   "src_folders": [  // Where you are storing your Nightwatch e2e tests
     "google_example",
-    // "simple_wordpress_example",
-    // "wordpress_example",
+    "simple_wordpress_example",
+    "wordpress_example"
   ],
   "selenium": {
     "start_process": true, // tells nightwatch to start/stop the selenium process
@@ -30,21 +30,21 @@ module.exports = {
       "desiredCapabilities": { // use Chrome as the default browser for tests
         "browserName": "chrome",
         "javascriptEnabled": true, // turn off to test progressive enhancement
-        //        "chromeOptions": {
-        //          "args" : [
-        //            "headless",
-        //            "no-sandbox",
-        //            "disable-gpu",
-        //            "window-size=1920,1280"
-        //          ]
-        //        }
+        //                "chromeOptions": {
+        //                  "args" : [
+        //                    "headless",
+        //                    "no-sandbox",
+        //                    "disable-gpu",
+        //                    "window-size=1920,1280"
+        //                  ]
+        //                }
       }
     },
   },
-  //  "test_workers" : {
-  //    "enabled": true,
-  //    "workers": "auto"
-  //  }
+  "test_workers" : {
+    "enabled": true,
+    "workers": "auto"
+  }
 }
 
 function padLeft (count) { // theregister.co.uk/2016/03/23/npm_left_pad_chaos/
