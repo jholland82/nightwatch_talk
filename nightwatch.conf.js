@@ -7,7 +7,6 @@ module.exports = {
   "page_objects_path": "page_objects",
   "src_folders": [  // Where you are storing your Nightwatch e2e tests
     "google_example",
-    "simple_wordpress_example",
     "wordpress_example"
   ],
   "selenium": {
@@ -41,10 +40,10 @@ module.exports = {
       }
     },
   },
-  "test_workers" : {
-    "enabled": true,
-    "workers": "auto"
-  }
+  //  "test_workers" : {
+  //    "enabled": true,
+  //    "workers": "auto"
+  //  }
 }
 
 function padLeft (count) { // theregister.co.uk/2016/03/23/npm_left_pad_chaos/
