@@ -23,7 +23,7 @@ module.exports = {
       "selenium_host": "localhost",
       "silent": true,
       "globals": {
-        "url": process.env.GOOGLE_URL,
+        "url": "https://www.google.com",
         "waitTime": 5000 // sometimes internet is slow so wait.
       },
       "desiredCapabilities": { // use Chrome as the default browser for tests
