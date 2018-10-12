@@ -7,7 +7,6 @@ module.exports = {
   "page_objects_path": "page_objects",
   "src_folders": [  // Where you are storing your Nightwatch e2e tests
     "google_example",
-    "simple_wordpress_example",
     "wordpress_example"
   ],
   "selenium": {
@@ -24,7 +23,7 @@ module.exports = {
       "selenium_host": "localhost",
       "silent": true,
       "globals": {
-        "url": process.env.GOOGLE_URL,
+        "url": "https://www.google.com",
         "waitTime": 5000 // sometimes internet is slow so wait.
       },
       "desiredCapabilities": { // use Chrome as the default browser for tests
@@ -41,10 +40,10 @@ module.exports = {
       }
     },
   },
-  "test_workers" : {
-    "enabled": true,
-    "workers": "auto"
-  }
+  //  "test_workers" : {
+  //    "enabled": true,
+  //    "workers": "auto"
+  //  }
 }
 
 function padLeft (count) { // theregister.co.uk/2016/03/23/npm_left_pad_chaos/
