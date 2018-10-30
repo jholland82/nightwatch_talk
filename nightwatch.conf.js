@@ -40,10 +40,10 @@ module.exports = {
       }
     },
   },
-  //  "test_workers" : {
-  //    "enabled": true,
-  //    "workers": "auto"
-  //  }
+  "test_workers" : {
+    "enabled": true,
+    "workers": "auto"
+  }
 }
 
 function padLeft (count) { // theregister.co.uk/2016/03/23/npm_left_pad_chaos/
