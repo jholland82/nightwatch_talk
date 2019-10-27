@@ -72,7 +72,7 @@ When you use NightwatchJS take a look at the docs and take what you need for you
 
 ## ENV Values
 I am using ENV variables for the following values.  You will want to set them locally or change them to string values in your code
-GOOGLE_URL
-WP_ADMIN
-WP_USERNAME
-WP_PASSWORD
+* GOOGLE_URL
+* WP_ADMIN
+* WP_USERNAME
+* WP_PASSWORD
