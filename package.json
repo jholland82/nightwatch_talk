@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "chromedriver": "^2.40.0",
-    "nightwatch": "^0.9.21",
+    "nightwatch": "^1.2.4",
     "selenium-server": "^3.13.0"
   },
   "devDependencies": {},
